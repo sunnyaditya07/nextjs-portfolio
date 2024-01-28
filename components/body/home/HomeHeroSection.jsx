@@ -103,6 +103,7 @@ const HomeHeroSection = () => {
                   height={114}
                   alt="My Works"
                   className={styles.myWork}
+                  quality={100}
                 />
               </div>
               <div className={styles.projectsTextContainer}>
