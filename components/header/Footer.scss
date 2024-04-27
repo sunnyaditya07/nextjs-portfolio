@@ -1,0 +1,38 @@
+.footer-main-container {
+  gap: 5rem;
+  justify-content: space-around;
+}
+
+.footer-title {
+  margin-top: 8rem;
+}
+.footerNavigation {
+  list-style: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+  gap: 3.5rem;
+  cursor: pointer;
+  .navLink {
+    text-decoration: none;
+    color: #9f9f9f;
+    transition: all 0.3s;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.footer-rights-text {
+  font-size: 1.4rem;
+  color: #9f9f9f;
+  .footer-x {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-title {
+    margin-top: 5.5rem;
+  }
+}

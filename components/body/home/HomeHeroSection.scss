@@ -1,0 +1,509 @@
+.heroContainer {
+  width: 100%;
+}
+.hero {
+  display: flex;
+  gap: 2.5rem;
+  width: 100%;
+}
+.description {
+  padding: 5rem;
+  display: flex;
+  border-radius: 30px;
+  gap: 3.5rem;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  cursor: pointer;
+  width: 50%;
+}
+.profilePicContainer {
+  .profilePic {
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+}
+
+.profileBioContainer {
+  position: relative;
+  padding-top: 3rem;
+
+  .title {
+    color: #bcbcbc;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+  .name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    color: #5b78f6;
+  }
+  .place {
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    color: #bcbcbc;
+  }
+  .resume {
+    background: #323232;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffff;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: background 0.3s !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    .cv {
+      text-decoration: none;
+      color: #ffff;
+      font-size: 1.4rem;
+    }
+  }
+}
+.cursor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 50%;
+  transition: opacity 0.3s;
+}
+
+.workAndFeatureContainer {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.marqueeContainer {
+  padding: 2rem 2.5rem;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 30px;
+  text-transform: uppercase;
+
+  .marquee {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .scrollingText {
+      white-space: nowrap;
+      animation: scroll 7s linear infinite;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #bcbcbc;
+      margin-left: 0.5rem;
+      .featuredText {
+        color: #ffff;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.signAndProjectConatiner {
+  display: flex;
+  gap: 2.5rem;
+}
+.signConatiner {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  width: 48%;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.signImgConatiner {
+  padding: 6rem 5rem 6rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutConatiner {
+  padding: 0 2rem 3rem 2rem;
+  position: relative;
+}
+.moreAboutMe {
+  text-transform: uppercase;
+  color: #bcbcbc;
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.credentials {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: #ffff;
+}
+.aboutCursor {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 50%;
+  transition: opacity 0.3s;
+}
+
+.projectContainer {
+  width: 48%;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+.myWorksImg {
+  padding: 2.7rem 2.5rem 2.7rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsTextContainer {
+  padding: 0 2rem 3rem 2rem;
+  position: relative;
+  .showcase {
+    text-transform: uppercase;
+    color: #bcbcbc;
+    font-size: 1.2rem;
+    opacity: 0.5;
+  }
+  .projects {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: #ffff;
+  }
+  .projectCursor {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 50%;
+    transition: opacity 0.3s;
+  }
+}
+
+.description:hover {
+  .cursor {
+    opacity: 100% !important;
+  }
+}
+.resume:hover {
+  background: #5b78f6 !important;
+  .cv {
+    color: #323232 !important;
+  }
+}
+.signConatiner:hover {
+  .aboutCursor {
+    opacity: 100% !important;
+  }
+}
+.projectContainer:hover {
+  .projectCursor {
+    opacity: 100% !important;
+  }
+}
+
+.pf-profile-icon-container {
+  gap: 10px;
+  padding: 2.7rem 2.5rem 2.7rem 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pf-profile-icon-box {
+  padding: 3.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 50%;
+  transition: all 0.3s;
+  &:hover {
+    background: #fff;
+    i {
+      color: #000;
+    }
+  }
+  i {
+    font-size: 4rem;
+  }
+}
+.pf-profile-wt-container {
+  gap: 2.5rem;
+}
+.pf-together-container {
+  width: 48%;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .pf-lets-cursor {
+      opacity: 100%;
+    }
+  }
+}
+.pf-pendulum {
+  margin-left: 3rem;
+}
+.pf-lets-cursor {
+  transition: opacity 0.3s;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 50%;
+}
+.pf-lets-container {
+  // pf-lets-container
+  padding: 2.7rem 2.5rem 2.7rem 2.5rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.pf-main-container {
+  gap: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.pf-profile-container {
+  width: 50%;
+}
+
+.pf-profile-box {
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .heroContainer {
+    .hero {
+      gap: 2rem;
+      .description {
+        padding: 3rem 2.5rem !important;
+        gap: 2.5rem !important;
+        height: 100% !important;
+        .profileBioContainer {
+          padding-top: 0.9rem !important;
+          height: auto !important;
+          .title {
+            font-size: 1rem !important;
+          }
+        }
+      }
+
+      .workAndFeatureContainer {
+        gap: 2rem;
+        .signAndProjectConatiner {
+          height: 100% !important;
+          gap: 2rem;
+          .signImgConatiner {
+            padding: 3.5rem !important;
+          }
+        }
+        .projectContainer {
+          .myWorksImg {
+            padding: 1.8rem 3.5rem 1.8rem 3.5rem !important;
+            .myWork {
+              width: 150px !important;
+              height: 85px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pf-profile-icon-box {
+    padding: 2rem;
+  }
+  .gfonts-image {
+    width: 100%;
+    height: 85px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroContainer {
+    padding: 0 3rem;
+    .hero {
+      flex-direction: column;
+      gap: 2rem;
+      .description {
+        padding: 3rem 2.5rem !important;
+        gap: 2.5rem !important;
+        width: 100% !important;
+        height: 100% !important;
+        .profileBioContainer {
+          padding-top: 0.9rem !important;
+          height: auto !important;
+          width: 100%;
+          .title {
+            font-size: 1rem !important;
+          }
+        }
+      }
+
+      .workAndFeatureContainer {
+        gap: 2rem;
+        width: 100%;
+        // margin-bottom: 100px;
+        .signAndProjectConatiner {
+          height: 100% !important;
+          gap: 2rem;
+          .signImgConatiner {
+            padding: 6rem 5rem 6rem 5rem !important;
+          }
+        }
+        .projectContainer {
+          .myWorksImg {
+            padding: 1.5rem 2.5rem 1.5rem 2.5rem !important;
+            .myWork {
+              width: 240px !important;
+              height: 140px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pf-profile-wt-container {
+    padding: 0 3rem;
+  }
+  .pf-profile-container {
+    width: 100%;
+  }
+  .pf-profile-box {
+    // flex-direction: column;
+    // width: 100%;
+  }
+  .pf-profile-wt-container {
+    flex-direction: column;
+  }
+  // .gfonts-image {
+  //   width: 180px;
+  //   height: 90px;
+  // }
+  .pf-together-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroContainer {
+    padding-inline: 1rem;
+
+    .hero {
+      flex-direction: column;
+      gap: 2rem;
+      .description {
+        /* padding: 3rem 2.5rem !important; */
+        gap: 2.5rem !important;
+        width: 100% !important;
+        height: 100% !important;
+        flex-direction: column;
+
+        .profilePicContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 2rem;
+        }
+        .profileBioContainer {
+          padding-top: 0.9rem !important;
+          height: 20rem !important;
+          width: 100%;
+          .title {
+            font-size: 1rem !important;
+          }
+        }
+      }
+
+      .workAndFeatureContainer {
+        gap: 2rem;
+        width: 100%;
+        .signAndProjectConatiner {
+          height: 100% !important;
+          gap: 2rem;
+          flex-direction: column;
+          .signConatiner {
+            width: 100%;
+            .signImgConatiner {
+              padding: 6rem 5rem 6rem 5rem !important;
+            }
+          }
+        }
+        .projectContainer {
+          width: 100% !important;
+          .myWorksImg {
+            padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+            width: 100% !important;
+            .myWork {
+              width: 240px !important;
+              height: 140px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pf-profile-wt-container {
+    padding-inline: 1rem;
+  }
+  .pf-profile-container {
+    width: 100%;
+  }
+  .projectContainer {
+    width: 100%;
+  }
+  .pf-profile-box {
+    flex-direction: column;
+    // width: 100%;
+  }
+  .pf-profile-wt-container {
+    flex-direction: column;
+  }
+  .gfonts-image {
+    width: 180px;
+    height: 90px;
+  }
+  .pf-together-container {
+    width: 100%;
+  }
+  .pf-lets-container {
+    font-size: 3rem;
+  }
+}

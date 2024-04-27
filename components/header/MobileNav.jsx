@@ -1,21 +1,21 @@
 import React from "react";
-import styles from "./MobileNav.module.scss";
+import "./MobileNav.scss";
 import Link from "next/link";
 const MobileNav = ({ mobileNav }) => {
-  const mobileNavClass = mobileNav ? styles.active : styles.inactive;
+  const mobileNavClass = mobileNav ? "active" : "inactive";
   return (
-    <div className={`${styles.mobileNavContainer} ${mobileNavClass}`}>
-      <ul className={styles.headerNavigation}>
-        <Link href="/" className={styles.navLink}>
+    <div className={`mobileNavContainer ${mobileNavClass}`}>
+      <ul className="headerNavigationMobile">
+        <Link href="/" className="navLink">
           <li>Home</li>
         </Link>
-        <Link href="/about" className={styles.navLink}>
+        <Link href="/about" className="navLink">
           <li>About</li>
         </Link>
-        <Link href="/works" className={styles.navLink}>
+        <Link href="/works" className="navLink">
           <li>Works</li>
         </Link>
-        <Link href="/contact" className={styles.navLink}>
+        <Link href="/contact" className="navLink">
           <li>Contact</li>
         </Link>
       </ul>
