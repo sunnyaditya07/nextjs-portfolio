@@ -13,7 +13,7 @@ const Header = () => {
       <div className="header">
         <Link href="/" className="headerTitle">
           <p>
-            Wembienti<span className="x">X</span>
+            Wembi<span className="x">X</span>
           </p>
         </Link>
         <ul className="headerNavigation">

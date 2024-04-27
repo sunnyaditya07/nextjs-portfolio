@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-title">
         <Link href="/" className="headerTitle ">
           <p>
-            Wembienti<span className="x">X</span>
+            Wembi<span className="x">X</span>
           </p>
         </Link>
       </div>
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="footer-rights">
         <p className="footer-rights-text">
-          © All rights reserved by Wembienti
+          © All rights reserved by Wembi
           <span className="blue-color footer-x">X</span>
         </p>
       </div>

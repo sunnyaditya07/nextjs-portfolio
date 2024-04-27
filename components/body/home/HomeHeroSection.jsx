@@ -22,7 +22,9 @@ const HomeHeroSection = () => {
             <div className="profileBioContainer">
               <h4 className="title">A Frontend Developer</h4>
               <h1 className="name">Sunny Kumar.</h1>
-              <p className="place">I am Frontend Developer based in Patna.</p>
+              <p className="place">
+                Crafting digital experiences with code and design.
+              </p>
 
               <button className="resume">
                 <a
