@@ -28,8 +28,8 @@ const HomeHeroSection = () => {
 
               <button className="resume">
                 <a
-                  href="/assets/Sunny_Kumar_Resume.pdf"
-                  download="Resume"
+                  // href="/assets/Sunny_Kumar_Resume.pdf"
+                  // download="Resume"
                   className="cv"
                 >
                   Download CV
