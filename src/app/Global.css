@@ -50,6 +50,9 @@ body {
     rgba(255, 255, 255, 0.05)
   );
 }
+.default-padding {
+  padding: 2.7rem 2.5rem 2.7rem 2.5rem;
+}
 .position-absolute {
   position: absolute;
 }

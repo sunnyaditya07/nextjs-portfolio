@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "./HomeHeroSection.scss";
-import Footer from "../../header/Footer";
+import Footer from "../../footer/Footer";
 const HomeHeroSection = () => {
   return (
     <div className="pf-main-container display-flex flex-direction-column">
@@ -200,9 +200,6 @@ const HomeHeroSection = () => {
             />
           </div>
         </div>
-      </section>
-      <section>
-        <Footer />
       </section>
     </div>
   );

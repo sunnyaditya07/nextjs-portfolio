@@ -1,0 +1,158 @@
+// .pf-about {
+// //   gap: 2.5rem;
+// }
+.about-container {
+  gap: 2.5rem;
+}
+.pf-about-pic-box {
+  padding: 2.5rem;
+  border-radius: 30px;
+  gap: 3.5rem;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  cursor: pointer;
+}
+.pf-about-profilePic {
+  border-radius: 30px;
+}
+
+.pf-about-self-summary-text {
+  font-size: 7.7rem;
+  font-weight: 600;
+  //   margin-inline: 1rem;
+}
+.pf-about-description-container {
+  justify-content: space-between;
+}
+.self-summary-box {
+  justify-content: space-between;
+  margin-inline: 1.5rem;
+}
+.pf-about-main-description-container {
+}
+.pf-about-my-name {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.pf-about-description-text {
+  color: #ffffff;
+  opacity: 0.8;
+  line-height: 25px;
+  margin: 0;
+  font-size: 16px;
+  width: 90%;
+  margin-top: 1.3rem;
+}
+
+.pf-about-expereince-section {
+  gap: 2.5rem;
+}
+.pf-about-experience-container {
+  border-radius: 30px;
+  width: 50%;
+  font-weight: 500;
+
+  .pf-about-experience-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 2.3rem;
+  }
+  .pf-about-duration-text {
+    color: #bcbcbc;
+    opacity: 0.6;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .pf-about-position-text {
+    font-size: 1.8rem;
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 0.7rem;
+  }
+  .pf-about-company {
+    color: #bcbcbc;
+    font-size: 1.4rem;
+    opacity: 0.6;
+    margin: 0;
+  }
+}
+.pf-about-company-container {
+  margin-top: 3.2rem;
+}
+.pf-about-cred-prof-container {
+  gap: 2.5rem;
+  .pf-aout-profile-container {
+    // width: 25%;
+  }
+  .pf-about-together-cont {
+    width: 75%;
+  }
+  .pf-about-sign-cont {
+    width: 25%;
+  }
+}
+.pf-about-prof-toge-box {
+  width: 75%;
+  gap: 2.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .pf-about-self-summary-text {
+    font-size: 5.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .pf-about {
+    justify-content: center;
+  }
+  .self-summary-box {
+    margin-bottom: 2.5rem;
+  }
+  .pf-about-cred-prof-container {
+    flex-direction: column;
+    .pf-about-prof-toge-box {
+      width: 100%;
+    }
+    .pf-about-together-cont {
+      width: 48%;
+      .pf-lets-container {
+        font-size: 3rem;
+      }
+    }
+    .pf-about-sign-cont {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .pf-about-pic-box {
+    padding: 1.6rem;
+  }
+  .pf-star-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .pf-about-self-summary-text {
+    font-size: 2.6rem;
+  }
+  .pf-about-description-text {
+    width: 100%;
+  }
+  .pf-about-expereince-section {
+    flex-direction: column;
+    .pf-about-experience-container {
+      width: 100%;
+    }
+  }
+  .pf-about-prof-toge-box {
+    flex-direction: column;
+    .pf-about-together-cont {
+      width: 100%;
+    }
+  }
+}
