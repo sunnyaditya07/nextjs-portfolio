@@ -130,9 +130,17 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .pf-about-pic-box {
-    padding: 1.6rem;
+  .pf-about {
+    width: 100%;
+    .pf-about-pic-box {
+      width: 100%;
+      .pf-about-profilePic {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
+
   .pf-star-icon {
     width: 30px;
     height: 30px;

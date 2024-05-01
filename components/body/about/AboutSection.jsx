@@ -1,22 +1,24 @@
 import Image from "next/image";
 import React from "react";
 import "./AboutSection.scss";
+import "../../../src/app/Global.css";
+import "../home/HomeHeroSection.scss";
 const AboutSection = () => {
   return (
     <div className="pf-main-container display-flex flex-direction-column">
       <section className="heroContainer about-container display-flex">
         <div className="pf-about display-flex">
           <div className="pf-about-pic-box">
-            <div className="profilePicContainer">
-              <Image
-                src="/assets/photo.jpg"
-                className="pf-about-profilePic"
-                width={300}
-                height={300}
-                alt="Profile Pic"
-                quality={100}
-              />
-            </div>
+            {/* <div className="profilePicContainer"> */}
+            <Image
+              src="/assets/photo.jpg"
+              className="pf-about-profilePic"
+              width={300}
+              height={300}
+              alt="Profile Pic"
+              quality={100}
+            />
+            {/* </div> */}
           </div>
         </div>
         <div className="pf-about-description-container display-flex flex-direction-column ">
