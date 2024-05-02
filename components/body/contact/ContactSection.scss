@@ -141,6 +141,9 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .pf-contact-detail-cont {
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .pf-contact-detail-cont {
@@ -148,6 +151,9 @@
   }
   .pf-contact-mail-cont {
     width: 55%;
+  }
+  .pf-contact-mail-box-div {
+    padding: 2.8rem;
   }
   .pf-contact-pendulum {
     right: 3rem;
