@@ -1,0 +1,193 @@
+.pf-contact-detail-cont {
+  width: 35%;
+}
+
+.pf-contact-ci-text {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+.pf-contact-detail-list {
+  justify-content: space-between;
+  gap: 6.5rem;
+}
+.pf-contact-mai-id-cont {
+  gap: 2.5rem;
+  .pf-contact-mail-box {
+    width: 7rem;
+    height: 7rem;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.05)
+    );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 2.5rem;
+    }
+  }
+  .pf-contact-mail-deatil-box {
+    margin-top: 0.2rem;
+  }
+}
+.pf-contact-mail-text {
+  color: #bcbcbc;
+  font-size: 1.4rem;
+  opacity: 0.5;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.pf-contact-mail-id-text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.pf-contact-social-cont {
+  margin-top: 6.5rem;
+}
+
+.pf-contact-social-icon-cont {
+  gap: 2.5rem;
+}
+.pf-contact-icon-con {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    i {
+      color: #000;
+    }
+  }
+  i {
+    font-size: 2.8rem;
+    transition: all 0.3s;
+  }
+}
+.pf-contact-mail-cont {
+  width: 65%;
+  border-radius: 30px;
+  position: relative;
+}
+.pf-contact-pendulum {
+  position: absolute;
+  right: 6rem;
+}
+
+.pf-contact-mail-box-div {
+  padding: 4rem;
+}
+.pf-contact-toget-text {
+  font-size: 44px;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.pf-contact-input-cont {
+  gap: 1.4rem;
+}
+.pf-contact-input {
+  width: 100%;
+  border: none;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
+  border-radius: 10px;
+  padding: 1.8rem 2rem;
+  font-size: 1.4rem;
+  display: block;
+  color: #fff;
+  font-family: inherit;
+  outline: none;
+}
+.pf-contact-textarea {
+  height: 14.5rem;
+  resize: none;
+  font-family: inherit;
+}
+.pf-contact-send-btn {
+  width: 100%;
+  border: none;
+  padding: 1.8rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: #323232;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    color: #323232;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 768px) {
+  .pf-contact-detail-cont {
+    width: 45%;
+  }
+  .pf-contact-mail-cont {
+    width: 55%;
+  }
+  .pf-contact-pendulum {
+    right: 3rem;
+  }
+  .pf-contact-textarea {
+    height: 9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .pf-contact-main-cont {
+    flex-direction: column;
+  }
+  .pf-contact-detail-cont {
+    width: 100%;
+  }
+  .pf-contact-mail-cont {
+    width: 100%;
+    margin-top: 6.5rem;
+  }
+  .pf-contact-social-icon-cont {
+    justify-content: space-between;
+  }
+  .pf-contact-icon-con {
+    // padding: 2rem;
+    i {
+      //   font-size: 2rem;
+    }
+  }
+  .pf-contact-mail-box-div {
+    padding: 2.5rem;
+  }
+
+  .pf-contact-toget-text {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .pf-contact-send-btn {
+    margin-bottom: 3rem;
+  }
+  .pf-contact-textarea {
+    height: 14rem;
+  }
+}
