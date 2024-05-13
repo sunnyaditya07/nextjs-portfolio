@@ -236,13 +236,13 @@
 
 .pf-profile-icon-container {
   gap: 10px;
-  padding: 2.7rem 2.5rem 2.7rem 2.5rem;
+  padding: 4rem 2.5rem 4rem 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .pf-profile-icon-box {
-  padding: 3.7rem;
+  padding: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,6 +261,7 @@
   }
   i {
     font-size: 4rem;
+    transition: all 0.3s;
   }
 }
 .pf-profile-wt-container {
@@ -434,6 +435,7 @@
         width: 100% !important;
         height: 100% !important;
         flex-direction: column;
+        cursor: default;
 
         .profilePicContainer {
           display: flex;
@@ -460,6 +462,7 @@
           flex-direction: column;
           .signConatiner {
             width: 100%;
+            cursor: default;
             .signImgConatiner {
               padding: 6rem 5rem 6rem 5rem !important;
             }
@@ -467,6 +470,7 @@
         }
         .projectContainer {
           width: 100% !important;
+          cursor: default;
           .myWorksImg {
             padding: 1.5rem 2.5rem 1.5rem 2.5rem;
             width: 100% !important;
@@ -501,8 +505,16 @@
   }
   .pf-together-container {
     width: 100%;
+    cursor: default;
   }
   .pf-lets-container {
     font-size: 3rem;
+  }
+  .profileBioContainer .resume {
+    cursor: default;
+  }
+
+  .projectContainer {
+    cursor: default;
   }
 }

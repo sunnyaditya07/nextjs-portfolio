@@ -1,0 +1,66 @@
+.pf-wrok-ap-main-cont {
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.pf-work-ap-text-cont {
+  width: 100%;
+}
+.pf-work-ap-text-box {
+  color: #ffffff;
+  font-size: 7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+.pf-work-section-work-cont {
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  // justify-content: space-evenly;
+  justify-content: space-between;
+}
+.pf-work-section-work-cont {
+  .pf-work-tab-cont {
+    width: 31.5%;
+  }
+}
+.pf-work-image-cont {
+  width: 100%;
+  .pf-work-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pf-work-section-work-cont {
+    .pf-work-tab-cont {
+      width: 31%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pf-work-section-work-cont {
+    .pf-work-tab-cont {
+      width: 47.5%;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .pf-star-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .pf-work-ap-text-box {
+    font-size: 2.6rem;
+  }
+  .pf-work-section-work-cont {
+    gap: 2.6rem;
+  }
+  .pf-work-section-work-cont {
+    .pf-work-tab-cont {
+      width: 100%;
+    }
+  }
+}

@@ -33,4 +33,15 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .headerTitle {
+    p {
+      cursor: default;
+    }
+  }
+  .footerNavigation {
+    cursor: default;
+  }
+  .footerNavigation .navLink {
+    cursor: default;
+  }
 }

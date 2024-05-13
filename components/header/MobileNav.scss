@@ -35,28 +35,10 @@
   .mobileNavContainer {
     display: block;
   }
+  .headerNavigationMobile {
+    cursor: default;
+  }
+  .headerNavigationMobile .navLink {
+    cursor: default;
+  }
 }
-
-/*
-  .mobileNavContainer {
-    display: none;
-    height: 22rem;
-    width: 95%;
-    overflow-x: hidden;
-    transform-origin: 50% 50% 0px;
-    top: 0;
-    left: 0;
-    padding-top: 100px;
-    padding-bottom: 24px;
-    will-change: transform;
-    border: 3px solid red;
-    background: #0f0f0f;
-    z-index: 10;
-    position: fixed;
-    transition: top 0.3s ease-in-out;
-    &.active {
-      background-color: red;
-      border: 5px solid blue;
-      opacity: 1;
-      visibility: visible;
-      transform: translate3d(0px, 0, 0px) scale(1, 1) scale(1, 1); /* Show the mobileNav when active */

@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "../../../components/header/Header";
-import WorkSection from "../../../components/body/work/WorkSection";
+import CredentialSection from "../../../components/body/credential/CredentialSection";
 import Footer from "../../../components/footer/Footer";
 
-const Works = () => {
+const Credential = () => {
   return (
     <main>
       <Header />
-      <WorkSection />
+      <CredentialSection />
       <Footer />
     </main>
   );
 };
 
-export default Works;
+export default Credential;

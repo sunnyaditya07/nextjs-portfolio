@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import "./AboutSection.scss";
 import "../../../src/app/Global.css";
 import "../home/HomeHeroSection.scss";
+import { useRouter } from "next/navigation";
 const AboutSection = () => {
+  const router = useRouter();
   return (
     <div className="pf-main-container display-flex flex-direction-column">
       <section className="heroContainer about-container display-flex">
@@ -137,7 +140,10 @@ const AboutSection = () => {
               />
             </div>
           </div>
-          <div className="pf-together-container pf-about-together-cont display-flex flex-direction-column linear-bg default-border-radius ">
+          <div
+            className="pf-together-container pf-about-together-cont display-flex flex-direction-column linear-bg default-border-radius "
+            onClick={() => router.push("/contact")}
+          >
             <div className="pf-pendulum ">
               <Image
                 className="projectCursor"
@@ -165,7 +171,10 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div className="signConatiner pf-about-sign-cont">
+        <div
+          className="signConatiner pf-about-sign-cont"
+          onClick={() => router.push("/credential")}
+        >
           <div className="signImgConatiner">
             <Image
               src="/assets/sign.png"

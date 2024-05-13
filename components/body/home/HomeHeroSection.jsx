@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 // import styles from "./HomeHeroSection.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import "./HomeHeroSection.scss";
 import Footer from "../../footer/Footer";
+import { useRouter } from "next/navigation";
 const HomeHeroSection = () => {
+  const router = useRouter();
   return (
     <div className="pf-main-container display-flex flex-direction-column">
       <section className="heroContainer">
@@ -74,7 +77,10 @@ const HomeHeroSection = () => {
               </div>
             </div>
             <div className="signAndProjectConatiner">
-              <div className="signConatiner">
+              <div
+                className="signConatiner"
+                onClick={() => router.push("/credential")}
+              >
                 <div className="signImgConatiner">
                   <Image
                     src="/assets/sign.png"
@@ -97,7 +103,11 @@ const HomeHeroSection = () => {
                   />
                 </div>
               </div>
-              <div className="projectContainer">
+
+              <div
+                className="projectContainer"
+                onClick={() => router.push("/works")}
+              >
                 <div className="myWorksImg">
                   <Image
                     src="/assets/my-works.png"
@@ -173,7 +183,10 @@ const HomeHeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="pf-together-container display-flex flex-direction-column linear-bg default-border-radius ">
+        <div
+          className="pf-together-container display-flex flex-direction-column linear-bg default-border-radius "
+          onClick={() => router.push("/contact")}
+        >
           <div className="pf-pendulum ">
             <Image
               className="projectCursor"

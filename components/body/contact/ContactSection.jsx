@@ -29,7 +29,7 @@ const ContactSection = () => {
               </div>
               <div className="pf-contact-mail-deatil-box">
                 <p className="pf-contact-mail-text">CONTACT US</p>
-                <p className="pf-contact-mail-id-text">+91 9837923000</p>
+                <p className="pf-contact-mail-id-text">+91 0000000000</p>
               </div>
             </div>
             <div className="display-flex pf-contact-mai-id-cont ">

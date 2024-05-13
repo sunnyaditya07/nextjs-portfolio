@@ -189,8 +189,12 @@
   }
   .pf-contact-send-btn {
     margin-bottom: 2.5rem;
+    cursor: default;
   }
   .pf-contact-textarea {
     height: 14rem;
+  }
+  .pf-contact-icon-con {
+    cursor: default;
   }
 }
